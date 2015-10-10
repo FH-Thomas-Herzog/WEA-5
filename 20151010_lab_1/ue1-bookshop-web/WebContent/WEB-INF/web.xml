@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>ue1-bookshop-web</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	<context-param>
+		<param-name>DB_DSN</param-name>
+		<param-value>jdbc:derby:C:\Users\Thomas\workspaces\fh-wea-workspace\ue1-bookshop-web\data\BooksDb</param-value>
+	</context-param>
+	<context-param>
+		<param-name>DB_USER</param-name>
+		<param-value>user</param-value>
+	</context-param>
+	<context-param>
+		<param-name>DB_PASSWORD</param-name>
+		<param-value>123</param-value>
+	</context-param>
+	<context-param>
+		<param-name>Shop_DELEGATE</param-name>
+		<param-value>at.fh.ooe.wea.shop.warehouse.DBShopDelegate</param-value>
+	</context-param>
+</web-app>

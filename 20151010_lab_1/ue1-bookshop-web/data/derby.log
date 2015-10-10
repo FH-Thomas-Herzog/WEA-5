@@ -1,0 +1,110 @@
+Thu Oct 11 14:41:20 CEST 2012 : Apache Derby Network Server - 10.9.1.0 - (1344872) started and ready to accept connections on port 1527
+Thu Oct 11 14:42:16 CEST 2012 Thread[DRDAConnThread_3,5,main] Cleanup action starting
+java.sql.SQLException: Database 'BooksDb' not found.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection30.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: java.sql.SQLException: Database 'BooksDb' not found.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 19 more
+============= begin nested exception, level (1) ===========
+java.sql.SQLException: Database 'BooksDb' not found.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection30.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (1) ===========
+Cleanup action completed
+Thu Oct 11 14:42:16 CEST 2012 Thread[DRDAConnThread_3,5,main] (DATABASE = BooksDb), (DRDAID = {1}), Database 'BooksDb' not found.
+----------------------------------------------------------------
+Thu Oct 11 14:42:53 CEST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance a816c00e-013a-4fd7-e8ed-0000416ce028 
+on database directory C:\public\WEA5\workspace\Ue1_BookShop_stefan\data\BooksDb  with class loader sun.misc.Launcher$AppClassLoader@263534c1 
+Loaded from file:/C:/public/db-derby-10.9.1.0-bin/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_07-b10
+user.dir=C:\public\WEA5\workspace\Ue1_BookShop_stefan\data
+derby.system.home=C:\public\WEA5\workspace\Ue1_BookShop_stefan\data
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Oct 11 14:44:13 CEST 2012:
+Shutting down instance a816c00e-013a-4fd7-e8ed-0000416ce028 on database directory C:\public\WEA5\workspace\Ue1_BookShop_stefan\data\BooksDb with class loader sun.misc.Launcher$AppClassLoader@263534c1 
+Thu Oct 11 14:44:13 CEST 2012 Thread[DRDAConnThread_4,5,main] (DATABASE = BooksDb), (DRDAID = {6}), Database 'BooksDb' shutdown.
+----------------------------------------------------------------
+Thu Oct 11 17:59:18 CEST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance b278c0c3-013a-4fd7-e8ed-0000416ce028 
+on database directory C:\public\WEA5\workspace\Ue1_BookShop_stefan\data\sample  with class loader sun.misc.Launcher$AppClassLoader@263534c1 
+Loaded from file:/C:/public/db-derby-10.9.1.0-bin/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_07-b10
+user.dir=C:\public\WEA5\workspace\Ue1_BookShop_stefan\data
+derby.system.home=C:\public\WEA5\workspace\Ue1_BookShop_stefan\data
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Oct 11 18:02:03 CEST 2012:
+Shutting down instance b278c0c3-013a-4fd7-e8ed-0000416ce028 on database directory C:\public\WEA5\workspace\Ue1_BookShop_stefan\data\sample with class loader sun.misc.Launcher$AppClassLoader@263534c1 
+Thu Oct 11 18:02:03 CEST 2012 Thread[DRDAConnThread_3,5,main] (DATABASE = sample), (DRDAID = {8}), Database 'sample' shutdown.
+----------------------------------------------------------------
+Thu Oct 11 18:02:23 CEST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance 63a4c15e-013a-4fd7-e8ed-0000416ce028 
+on database directory C:\public\WEA5\workspace\Ue1_BookShop_stefan\data\sample  with class loader sun.misc.Launcher$AppClassLoader@263534c1 
+Loaded from file:/C:/public/db-derby-10.9.1.0-bin/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_07-b10
+user.dir=C:\public\WEA5\workspace\Ue1_BookShop_stefan\data
+derby.system.home=C:\public\WEA5\workspace\Ue1_BookShop_stefan\data
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Oct 11 18:02:23 CEST 2012:
+Shutting down instance 63a4c15e-013a-4fd7-e8ed-0000416ce028 on database directory C:\public\WEA5\workspace\Ue1_BookShop_stefan\data\sample with class loader sun.misc.Launcher$AppClassLoader@263534c1 
+Thu Oct 11 18:02:23 CEST 2012 Thread[DRDAConnThread_5,5,main] (DATABASE = sample), (DRDAID = {10}), Database 'sample' shutdown.
+----------------------------------------------------------------
+Thu Oct 11 18:02:54 CEST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance 9bfc415f-013a-4fd7-e8ed-0000416ce028 
+on database directory C:\public\WEA5\workspace\Ue1_BookShop_stefan\data\BooksDb  with class loader sun.misc.Launcher$AppClassLoader@263534c1 
+Loaded from file:/C:/public/db-derby-10.9.1.0-bin/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_07-b10
+user.dir=C:\public\WEA5\workspace\Ue1_BookShop_stefan\data
+derby.system.home=C:\public\WEA5\workspace\Ue1_BookShop_stefan\data
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Oct 11 18:14:47 CEST 2012: Shutting down Derby engine
+----------------------------------------------------------------
+Thu Oct 11 18:14:48 CEST 2012:
+Shutting down instance 9bfc415f-013a-4fd7-e8ed-0000416ce028 on database directory C:\public\WEA5\workspace\Ue1_BookShop_stefan\data\BooksDb with class loader sun.misc.Launcher$AppClassLoader@263534c1 
+----------------------------------------------------------------
